@@ -1,5 +1,5 @@
 # rna-ss-conservation-annotator
-## A tool for secondary structure-based annotation of a set of RNA molecules
+### A tool for secondary structure-based annotation of a set of RNA molecules
 
 
 Given multiple sequences with its secondary structures,
@@ -10,13 +10,13 @@ secondary structure and a list file, that contains names of the sequences
 that should be compared. First sequence in the list is always the primary,
 meaning all other sequences are compared to it.
 
-### Requirements
+#### Requirements
 
 Requires the following to be installed:
 - **RNAPlot**, which can be downloaded as a part of the [Vienna RNA package](http://www.tbi.univie.ac.at/RNA/)
 - **clustalw2**, which can be found somewhat unorthodoxly at the [Help page of its website](http://www.ebi.ac.uk/Tools/msa/clustalw2/help/>)
 
-### Usage
+#### Usage
 
 The ``compare.py`` script can be used as a standalone command-line tool.
 

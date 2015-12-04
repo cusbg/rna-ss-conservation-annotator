@@ -1,9 +1,8 @@
 # rna-ss-conservation-annotator
-A tool for secondary structure-based annotation of a set of RNA molecules
+## A tool for secondary structure-based annotation of a set of RNA molecules
 
-======================
-Given:
-* multiple sequences with its secondary structures,
+
+Given multiple sequences with its secondary structures,
 produces a graphical representation of secondary structures conservation
 comparation with respect to one of the sequences.
 Expects directory containing fasta files (.fst) which includes (predicted)
@@ -20,9 +19,11 @@ Requires the following to be installed:
 Usage
 -----
 The ``compare.py`` script can be used as a standalone command-line tool.
+
 Command-line usage
-^^^^^^^^^^^^^^^^^^
-Run::
+
+Run:
   >>> compare.py --help
+  
 to get a description of all command-line parameters.
--------------------
+

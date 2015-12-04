@@ -12,6 +12,7 @@ meaning all other sequences are compared to it.
 #### Requirements
 
 Requires the following to be installed:
+- Python (tested with version 2.7)
 - **RNAPlot**, which can be downloaded as a part of the [Vienna RNA package](http://www.tbi.univie.ac.at/RNA/)
 - **clustalw2**, which can be found somewhat unorthodoxly at the [Help page of its website](http://www.ebi.ac.uk/Tools/msa/clustalw2/help/>)
 

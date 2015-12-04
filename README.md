@@ -22,7 +22,10 @@ The ``compare.py`` script can be used as a standalone command-line tool.
 Command-line usage
 
 Run:
-  >>> compare.py --help
+
+```
+compare.py --help
+```
   
 to get a description of all command-line parameters.
 

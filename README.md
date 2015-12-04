@@ -1,5 +1,4 @@
-# rna-ss-conservation-annotator
-### A tool for secondary structure-based annotation of a set of RNA molecules
+### A tool for secondary structure-based conservancy annotation of a set of RNA molecules
 
 
 Given multiple sequences with its secondary structures,

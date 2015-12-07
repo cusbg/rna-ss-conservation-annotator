@@ -321,6 +321,7 @@ class ConservancyComparator(object):
         ## EXTRACT ALL ALIGNED SEQUENCES
         alignment = read_alignment(self.alignment_filename)
         list_file = open(self.list_filename, 'rU')
+        translatedList = ""
         aligned_structures = {}
 
         for line in list_file:
@@ -335,6 +336,15 @@ class ConservancyComparator(object):
             aligned_structures[name] = translated_struct
 
         list_file.close()
+        
+        # translate structures in the alignment producing new alignment
+        alignmentFile = open(self.alignment_filename, 'r')
+        for line in alignmentFile:
+          translatedList += line[1:18] + line[18:200].replace('A', '(').replace('C', ')').replace('G', '.')
+        alignmentFile.close()
+        alignmentFile = open(os.path.join(self.dir_path, "alignment.txt"), 'w')
+        alignmentFile.write(translatedList)
+        alignmentFile.close()
 
         ## RUN COMPARATION TAGGER ON THE ALIGNMENT
         tagger = ComparationTagger(self.window_size, self.mismatch_percentage, True)

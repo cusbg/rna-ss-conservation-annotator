@@ -25,8 +25,14 @@ Command-line usage
 Run:
 
 ```
-compare.py --help
+python compare.py --help
 ```
   
 to get a description of all command-line parameters.
+
+```
+python compare.py bacteria
+```
+  
+to run annotation on the included bacteria data.
 
